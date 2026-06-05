@@ -1,0 +1,548 @@
+{
+  "notes": "FG = Filtrado Glomerular estimado (ml/min). Todos los datos extraídos de la Guía de Tratamiento Antimicrobiano en Adultos, Hospital Universitario de Valme (2023). Fuente original: The Sandford Guide to Antimicrobial Therapy 2019.",
+  "drugs": [
+    {
+      "name": "Aciclovir",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "5-10 mg/kg/8h"},
+            {"min_fg": 25, "max_fg": 50, "dose": "100% dosis/12h"},
+            {"min_fg": 10, "max_fg": 24, "dose": "100% dosis/24h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "50% dosis/24h"}
+          ]
+        },
+        {
+          "route": "VO",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "Normal"},
+            {"min_fg": 25, "max_fg": 50, "dose": "100% D/12h"},
+            {"min_fg": 10, "max_fg": 24, "dose": "100% D/8h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "100% D/12h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Amikacina",
+      "alert": "Monitorizar niveles. Precaución en IR.",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 80, "max_fg": null, "dose": "15-20 mg/kg/36h"},
+            {"min_fg": 60, "max_fg": 80, "dose": "15 mg/kg/36h"},
+            {"min_fg": 40, "max_fg": 60, "dose": "15 mg/kg/36h"},
+            {"min_fg": 20, "max_fg": 40, "dose": "15 mg/kg/48h"},
+            {"min_fg": 10, "max_fg": 20, "dose": "12 mg/kg/48h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "10 mg/kg/48h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Amoxicilina",
+      "routes": [
+        {
+          "route": "VO",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "250-500 mg/8h"},
+            {"min_fg": 10, "max_fg": 50, "dose": "250-500 mg/8-12h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "250-500 mg/24h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Amoxicilina/Clavulánico",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 30, "max_fg": null, "dose": "1-2 g/6-8h"},
+            {"min_fg": 10, "max_fg": 30, "dose": "500 mg/12h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "500 mg/24h"}
+          ]
+        },
+        {
+          "route": "VO",
+          "tiers": [
+            {"min_fg": 30, "max_fg": null, "dose": "250-500-1000 mg/6-8h"},
+            {"min_fg": 10, "max_fg": 30, "dose": "500 mg/12h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "500 mg/24h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ampicilina",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "1-2 g/4-6h"},
+            {"min_fg": 30, "max_fg": 50, "dose": "1-2 g/6-8h"},
+            {"min_fg": 10, "max_fg": 30, "dose": "1-2 g/8-12h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "500 mg/8h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Aztreonam",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "2 g/8h"},
+            {"min_fg": 10, "max_fg": 50, "dose": "1-1,5 g/8h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "1-2 g/12h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cefazolina",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "500 mg/6h"},
+            {"min_fg": 10, "max_fg": 50, "dose": "500 mg/12h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "250 mg/12h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cefepima",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 60, "max_fg": null, "dose": "2 g/8-12h"},
+            {"min_fg": 30, "max_fg": 60, "dose": "2 g/12h"},
+            {"min_fg": 11, "max_fg": 29, "dose": "2 g/24h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "2 g/24h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cefotaxima",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "2 g/8-12h"},
+            {"min_fg": 10, "max_fg": 50, "dose": "2 g/12-24h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "2 g/24-48h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ceftazidima",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "2 g/8-12h"},
+            {"min_fg": 10, "max_fg": 50, "dose": "2 g/12-24h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "2 g/24-48h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ceftazidima/Avibactam",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "2 g/0,5 g / 8h"},
+            {"min_fg": 30, "max_fg": 50, "dose": "1 g/0,25 g / 8h"},
+            {"min_fg": 15, "max_fg": 30, "dose": "0,75 g/0,1875 g / 12h"},
+            {"min_fg": 0, "max_fg": 15, "dose": "0,75 g/0,1875 g / 48h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ceftriaxona",
+      "notes": "No precisa ajuste renal.",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 0, "max_fg": null, "dose": "1-2 g/12-24h (sin ajuste)"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ciprofloxacino",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 30, "max_fg": null, "dose": "400 mg/12h"},
+            {"min_fg": 0, "max_fg": 30, "dose": "400 mg/24h"}
+          ]
+        },
+        {
+          "route": "VO",
+          "tiers": [
+            {"min_fg": 30, "max_fg": null, "dose": "500-750 mg/12h"},
+            {"min_fg": 0, "max_fg": 30, "dose": "250-500 mg/12h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Claritromicina",
+      "routes": [
+        {
+          "route": "IV/VO",
+          "tiers": [
+            {"min_fg": 30, "max_fg": null, "dose": "500 mg/12h"},
+            {"min_fg": 0, "max_fg": 30, "dose": "500 mg/24h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Clindamicina",
+      "notes": "No precisa ajuste renal.",
+      "routes": [
+        {
+          "route": "IV/VO",
+          "tiers": [
+            {"min_fg": 0, "max_fg": null, "dose": "300-900 mg/8h IV · 150-450 mg/6-8h VO (sin ajuste)"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cloxacilina",
+      "notes": "No precisa ajuste renal.",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 0, "max_fg": null, "dose": "1-2 g/4-6h (sin ajuste)"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Colistina",
+      "alert": "Precaución en IR. Monitorizar niveles.",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "5-20 mg/kg/día"},
+            {"min_fg": 30, "max_fg": 50, "dose": "Disminuir 50%"},
+            {"min_fg": 0, "max_fg": 14, "dose": "No recomendado"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cotrimoxazol (Trimetoprim/Sulfametoxazol)",
+      "routes": [
+        {
+          "route": "VO/IV",
+          "tiers": [
+            {"min_fg": 30, "max_fg": null, "dose": "800/160 mg/12h"},
+            {"min_fg": 15, "max_fg": 30, "dose": "Reducir 25%"},
+            {"min_fg": 0, "max_fg": 15, "dose": "800/160 mg/24h o Reducir 50%"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Daptomicina",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "6 mg/kg/24h"},
+            {"min_fg": 30, "max_fg": 50, "dose": "4-6 mg/kg/48h"},
+            {"min_fg": 0, "max_fg": 30, "dose": "4-6 mg/kg/48h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Doxiciclina",
+      "notes": "No precisa ajuste renal.",
+      "routes": [
+        {
+          "route": "VO/IV",
+          "tiers": [
+            {"min_fg": 0, "max_fg": null, "dose": "100 mg/12h (sin ajuste)"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ertapenem",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 30, "max_fg": null, "dose": "1 g/24h"},
+            {"min_fg": 0, "max_fg": 30, "dose": "0,5 g/24h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fluconazol",
+      "routes": [
+        {
+          "route": "VO/IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "100% dosis"},
+            {"min_fg": 0, "max_fg": 50, "dose": "50% dosis"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fosfomicina IV",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 70, "max_fg": null, "dose": "4 g/8h"},
+            {"min_fg": 50, "max_fg": 70, "dose": "4 g/8h"},
+            {"min_fg": 40, "max_fg": 50, "dose": "4 g/12h"},
+            {"min_fg": 20, "max_fg": 40, "dose": "4 g/24h"},
+            {"min_fg": 10, "max_fg": 20, "dose": "2 g/24h (máx 4 g/48h)"},
+            {"min_fg": 0, "max_fg": 10, "dose": "Reducir significativamente, consultar"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gentamicina",
+      "alert": "Monitorizar niveles. Precaución en IR.",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 60, "max_fg": null, "dose": "5 mg/kg/24h (crítico: 7 mg/kg; FQ: 10 mg/kg)"},
+            {"min_fg": 40, "max_fg": 60, "dose": "5-7 mg/kg/36h"},
+            {"min_fg": 20, "max_fg": 40, "dose": "5-7 mg/kg/36h"},
+            {"min_fg": 5, "max_fg": 20, "dose": "5-7 mg/kg/48h"},
+            {"min_fg": 0, "max_fg": 5, "dose": "2,5 mg/kg/48h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Levofloxacino",
+      "routes": [
+        {
+          "route": "VO/IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "Dosis habitual: 500 mg/24h · Infección grave: 500 mg/12h"},
+            {"min_fg": 20, "max_fg": 50, "dose": "Dosis carga 500 mg → 250 mg/24h · Grave: dosis carga + 500 mg/24h"},
+            {"min_fg": 0, "max_fg": 20, "dose": "Dosis carga 500 mg → 250 mg/48h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Linezolid",
+      "notes": "No precisa ajuste renal.",
+      "routes": [
+        {
+          "route": "VO/IV",
+          "tiers": [
+            {"min_fg": 0, "max_fg": null, "dose": "600 mg/12h (sin ajuste)"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Meropenem",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "1-2 g/8h"},
+            {"min_fg": 25, "max_fg": 50, "dose": "1-2 g/12h"},
+            {"min_fg": 10, "max_fg": 25, "dose": "500 mg/12h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "500 mg/24h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Metronidazol",
+      "notes": "No precisa ajuste renal. Precaución en hepatopatía.",
+      "routes": [
+        {
+          "route": "VO/IV",
+          "tiers": [
+            {"min_fg": 0, "max_fg": null, "dose": "500 mg/8h (sin ajuste)"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nitrofurantoína",
+      "routes": [
+        {
+          "route": "VO",
+          "tiers": [
+            {"min_fg": 45, "max_fg": null, "dose": "50 mg/6h"},
+            {"min_fg": 0, "max_fg": 45, "dose": "CONTRAINDICADA"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Norfloxacino",
+      "routes": [
+        {
+          "route": "VO",
+          "tiers": [
+            {"min_fg": 30, "max_fg": null, "dose": "400 mg/12h"},
+            {"min_fg": 0, "max_fg": 30, "dose": "400 mg/24h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Oseltamivir",
+      "routes": [
+        {
+          "route": "VO",
+          "tiers": [
+            {"min_fg": 60, "max_fg": null, "dose": "75 mg/12h"},
+            {"min_fg": 31, "max_fg": 60, "dose": "30 mg/12h"},
+            {"min_fg": 10, "max_fg": 30, "dose": "30 mg/24h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "No recomendado o consultar"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Penicilina G sódica",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "0,5-4 MU/4h"},
+            {"min_fg": 10, "max_fg": 50, "dose": "0,5-4 MU/8h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "0,5-4 MU/12h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Piperacilina/Tazobactam",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 40, "max_fg": null, "dose": "4 g/8h (infección leve-moderada) · 4 g/6h (grave/Pseudomonas)"},
+            {"min_fg": 20, "max_fg": 40, "dose": "4 g/8h"},
+            {"min_fg": 0, "max_fg": 20, "dose": "2 g/6-8h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rifampicina",
+      "notes": "No precisa ajuste renal.",
+      "routes": [
+        {
+          "route": "VO/IV",
+          "tiers": [
+            {"min_fg": 0, "max_fg": null, "dose": "300-600 mg/12-24h (sin ajuste)"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Teicoplanina",
+      "routes": [
+        {
+          "route": "IV/IM",
+          "tiers": [
+            {"min_fg": 55, "max_fg": null, "dose": "6 mg/kg/24h"},
+            {"min_fg": 40, "max_fg": 55, "dose": "300 mg/24h"},
+            {"min_fg": 0, "max_fg": 40, "dose": "200-400 mg/48-72h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tigeciclina",
+      "notes": "No precisa ajuste renal. Ajuste en hepatopatía grave.",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 0, "max_fg": null, "dose": "100 mg dosis carga → 50 mg/12h (sin ajuste)"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tobramicina",
+      "alert": "Monitorizar niveles. Precaución en IR.",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "5 mg/kg/24h"},
+            {"min_fg": 30, "max_fg": 50, "dose": "1 g/24h"},
+            {"min_fg": 10, "max_fg": 30, "dose": "1 g/48h"},
+            {"min_fg": 0, "max_fg": 10, "dose": "1 g/72h"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vancomicina",
+      "alert": "Ajuste posológico obligatorio basado en peso y función renal. Monitorizar niveles. Contactar con EI si dudas.",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "Ver nomograma. Carga: 25-30 mg/kg"},
+            {"min_fg": 25, "max_fg": 50, "dose": "Ver nomograma — intervalo extendido"},
+            {"min_fg": 10, "max_fg": 25, "dose": "Ver nomograma — monitorización estrecha"},
+            {"min_fg": 0, "max_fg": 10, "dose": "Ver nomograma — considerar alternativa"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Voriconazol",
+      "routes": [
+        {
+          "route": "IV",
+          "tiers": [
+            {"min_fg": 50, "max_fg": null, "dose": "6 mg/kg/12h x2 dosis → 4 mg/kg/12h"},
+            {"min_fg": 0, "max_fg": 50, "dose": "Pasar a VO para evitar acumulación del diluyente (ciclodextrina)"}
+          ]
+        },
+        {
+          "route": "VO",
+          "tiers": [
+            {"min_fg": 0, "max_fg": null, "dose": "200-300 mg/12h (sin ajuste renal VO)"}
+          ]
+        }
+      ]
+    }
+  ]
+}

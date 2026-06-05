@@ -1,0 +1,70 @@
+{
+  "source": "Guía de Tratamiento Antimicrobiano en Adultos, Hospital Universitario de Valme (2023)",
+  "notes": [
+    "Dosis de carga: 25-30 mg/kg IV (máximo 3.000 mg) en infusión de 60-90 min (para minimizar riesgo de síndrome del hombre rojo)",
+    "El mantenimiento se calcula según peso real y función renal",
+    "Monitorizar niveles valle (trough) antes de 4ª dosis o según protocolo local",
+    "Objetivo PK/PD: AUC24/CMI 400-600 mg·h/L (según ASHP/IDSA/SIDP 2020)",
+    "Contactar con Unidad de Enfermedades Infecciosas para ajuste terapéutico conjunto en pacientes complejos"
+  ],
+  "loading_dose": {
+    "formula": "25-30 mg/kg (peso real)",
+    "max_dose_mg": 3000,
+    "infusion_time_min": 90
+  },
+  "maintenance_nomogram": {
+    "description": "Dosis de mantenimiento según peso y función renal estimada",
+    "weight_ranges": ["<60 kg", "60-70 kg", "71-80 kg", "81-90 kg", "91-100 kg", ">100 kg"],
+    "fg_ranges": [">70", "50-70", "30-49", "10-29", "<10"],
+    "doses": {
+      "<60 kg": {
+        ">70": "1.000 mg/12h",
+        "50-70": "1.000 mg/24h",
+        "30-49": "750 mg/24h",
+        "10-29": "500 mg/24h",
+        "<10": "500 mg/48h (o diálisis)"
+      },
+      "60-70 kg": {
+        ">70": "1.250 mg/12h",
+        "50-70": "1.000 mg/12h",
+        "30-49": "1.000 mg/24h",
+        "10-29": "750 mg/24h",
+        "<10": "500 mg/48h (o diálisis)"
+      },
+      "71-80 kg": {
+        ">70": "1.500 mg/12h",
+        "50-70": "1.250 mg/12h",
+        "30-49": "1.000 mg/24h",
+        "10-29": "750 mg/24h",
+        "<10": "750 mg/48h (o diálisis)"
+      },
+      "81-90 kg": {
+        ">70": "1.500 mg/12h",
+        "50-70": "1.500 mg/12h",
+        "30-49": "1.250 mg/24h",
+        "10-29": "1.000 mg/24h",
+        "<10": "750 mg/48h (o diálisis)"
+      },
+      "91-100 kg": {
+        ">70": "1.750 mg/12h",
+        "50-70": "1.500 mg/12h",
+        "30-49": "1.500 mg/24h",
+        "10-29": "1.000 mg/24h",
+        "<10": "1.000 mg/48h (o diálisis)"
+      },
+      ">100 kg": {
+        ">70": "2.000 mg/12h",
+        "50-70": "1.750 mg/12h",
+        "30-49": "1.750 mg/24h",
+        "10-29": "1.250 mg/24h",
+        "<10": "1.000 mg/48h (o diálisis)"
+      }
+    }
+  },
+  "monitoring": {
+    "trough_target": "10-20 mg/L (método antiguo)",
+    "auc_target": "AUC24h/CMI 400-600 (método recomendado)",
+    "timing": "Nivel valle antes de la 4ª dosis (en estado estacionario)",
+    "frequency": "Cada 48-72h hasta estabilización, luego según evolución clínica y función renal"
+  }
+}

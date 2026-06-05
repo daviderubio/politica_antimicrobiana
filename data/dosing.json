@@ -1,0 +1,392 @@
+{
+  "antibiotic_classes": [
+    {
+      "class": "Penicilinas",
+      "antibiotics": [
+        {
+          "name": "Bencilpenicilina (Penicilina G)",
+          "routes": ["IV", "IM"],
+          "standard_dose": "1 MU/6h IV o IM",
+          "increased_dose": "2 MU/4-6h IV o IM",
+          "notes": "Meningitis por S. pneumoniae: 4 MU/4h si CMI ≤0,06. Neumonía por S. pneumoniae: 2 MU/6h si CMI ≤0,5; 4 MU/6h si CMI ≤1; 4 MU/4h si CMI ≤2"
+        },
+        {
+          "name": "Ampicilina",
+          "routes": ["IV"],
+          "standard_dose": "1-2 g/4-6h IV",
+          "increased_dose": "2 g/4h IV",
+          "notes": "Dosis altas en meningitis. Para endocarditis y meningitis: 2 g/4h"
+        },
+        {
+          "name": "Amoxicilina",
+          "routes": ["VO"],
+          "standard_dose": "500 mg/8h VO",
+          "increased_dose": "1 g/8h VO",
+          "notes": "ITU no complicada: 500 mg/8h VO"
+        },
+        {
+          "name": "Cloxacilina",
+          "routes": ["IV"],
+          "standard_dose": "1 g/6h IV",
+          "increased_dose": "2 g/4h IV",
+          "notes": "Para endocarditis infecciosa y meningitis usar dosis alta"
+        },
+        {
+          "name": "Amoxicilina/Clavulánico",
+          "routes": ["IV", "VO"],
+          "standard_dose": "1-2 g/6-8h IV · 500-875 mg/8h VO",
+          "increased_dose": "2 g/8h IV · 875 mg/8h VO",
+          "notes": ""
+        },
+        {
+          "name": "Piperacilina/Tazobactam",
+          "routes": ["IV"],
+          "standard_dose": "4 g/8h perfusión IV extendida",
+          "increased_dose": "4 g/6h perfusión IV extendida",
+          "notes": "La dosis estándar 4 g/8h es adecuada para ITU complicadas, intraabdominales y pie diabético, pero NO para infecciones por cepas resistentes a cefalosporinas 3ª generación"
+        }
+      ]
+    },
+    {
+      "class": "Cefalosporinas",
+      "antibiotics": [
+        {
+          "name": "Cefazolina (1ª gen)",
+          "routes": ["IV", "IM"],
+          "standard_dose": "1 g/8h IV o IM",
+          "increased_dose": "2 g/8h IV o IM",
+          "notes": "En infecciones complicadas (endovascular u osteoarticular) usar dosis alta"
+        },
+        {
+          "name": "Ceftriaxona (3ª gen)",
+          "routes": ["IV"],
+          "standard_dose": "2 g/24h IV",
+          "increased_dose": "2 g/12h o 4 g/24h IV",
+          "notes": "Meningitis: 2 g/12h o 4 g/24h IV"
+        },
+        {
+          "name": "Cefotaxima (3ª gen)",
+          "routes": ["IV", "IM"],
+          "standard_dose": "1 g/8h IV o IM",
+          "increased_dose": "2 g/6-8h IV o IM",
+          "notes": "Meningitis: 2 g/4-6h IV"
+        },
+        {
+          "name": "Ceftazidima (3ª gen)",
+          "routes": ["IV", "IM"],
+          "standard_dose": "1 g/8h IV o IM",
+          "increased_dose": "2 g/8h IV o IM o 1g/6h",
+          "notes": "Infecciones por Pseudomonas: usar dosis alta"
+        },
+        {
+          "name": "Cefepima (4ª gen)",
+          "routes": ["IV"],
+          "standard_dose": "1 g/8h o 2 g/12h IV",
+          "increased_dose": "2 g/8h IV",
+          "notes": "Infecciones por Pseudomonas: usar dosis alta en perfusión IV extendida 4 horas"
+        },
+        {
+          "name": "Ceftazidima/Avibactam",
+          "routes": ["IV"],
+          "standard_dose": "2 g/8h IV",
+          "increased_dose": "—",
+          "notes": "Reservado para enterobacterias productoras de carbapenemasa (KPC, OXA-48). Consultar con Enfermedades Infecciosas"
+        },
+        {
+          "name": "Ceftolozano/Tazobactam",
+          "routes": ["IV"],
+          "standard_dose": "1,5 g/8h IV",
+          "increased_dose": "—",
+          "notes": "Reservado para P. aeruginosa multirresistente. Requiere ajuste renal"
+        }
+      ]
+    },
+    {
+      "class": "Carbapenémicos",
+      "antibiotics": [
+        {
+          "name": "Meropenem",
+          "routes": ["IV"],
+          "standard_dose": "1 g/8h (30 min)",
+          "increased_dose": "2 g/8h perfusión IV extendida",
+          "notes": "En meningitis usar dosis alta. Infecciones por Pseudomonas: dosis alta"
+        },
+        {
+          "name": "Ertapenem",
+          "routes": ["IV"],
+          "standard_dose": "1 g/24h IV",
+          "increased_dose": "—",
+          "notes": "NO activo frente a Pseudomonas aeruginosa ni Acinetobacter"
+        },
+        {
+          "name": "Imipenem/Cilastatina",
+          "routes": ["IV"],
+          "standard_dose": "500 mg/6h IV",
+          "increased_dose": "1 g/6h IV",
+          "notes": "Ajuste renal necesario"
+        }
+      ]
+    },
+    {
+      "class": "Monobactámicos",
+      "antibiotics": [
+        {
+          "name": "Aztreonam",
+          "routes": ["IV", "IM"],
+          "standard_dose": "1 g/8h IV o IM",
+          "increased_dose": "2 g/6h IV o IM",
+          "notes": "Alternativa en alergia grave a betalactámicos para cubrir gram negativos"
+        }
+      ]
+    },
+    {
+      "class": "Fluorquinolonas",
+      "antibiotics": [
+        {
+          "name": "Ciprofloxacino",
+          "routes": ["VO", "IV"],
+          "standard_dose": "500 mg/12h VO · 400 mg/12h IV",
+          "increased_dose": "750 mg/12h VO · 400 mg/8h IV",
+          "notes": "Infecciones por Pseudomonas: usar dosis alta. Infección osteoarticular: dosis alta"
+        },
+        {
+          "name": "Levofloxacino",
+          "routes": ["VO", "IV"],
+          "standard_dose": "500 mg/24h VO o IV",
+          "increased_dose": "500 mg/12h VO o IV",
+          "notes": "En tratamiento de S. aureus usar dosis alta. Neumonía atípica grave: 500 mg/12h"
+        },
+        {
+          "name": "Norfloxacino",
+          "routes": ["VO"],
+          "standard_dose": "400 mg/12h VO",
+          "increased_dose": "—",
+          "notes": "Profilaxis PBE, ITU no complicada. Requiere ajuste renal (no usar si FG <30)"
+        }
+      ]
+    },
+    {
+      "class": "Macrólidos",
+      "antibiotics": [
+        {
+          "name": "Azitromicina",
+          "routes": ["VO", "IV"],
+          "standard_dose": "500 mg/24h VO o IV",
+          "increased_dose": "—",
+          "notes": "Infecciones respiratorias atípicas, ITS. Duración habitual 3-5 días"
+        },
+        {
+          "name": "Claritromicina",
+          "routes": ["VO", "IV"],
+          "standard_dose": "250 mg/12h VO o IV",
+          "increased_dose": "500 mg/12h VO o IV",
+          "notes": "Erradicación H. pylori, infecciones respiratorias atípicas"
+        }
+      ]
+    },
+    {
+      "class": "Glucopéptidos",
+      "antibiotics": [
+        {
+          "name": "Vancomicina",
+          "routes": ["IV"],
+          "standard_dose": "Ver nomograma (ver calculadora)",
+          "increased_dose": "—",
+          "notes": "Dosis de carga: 25-30 mg/kg IV. Monitorización de niveles obligatoria. Ajuste por función renal mediante nomograma"
+        },
+        {
+          "name": "Teicoplanina",
+          "routes": ["IV", "IM"],
+          "standard_dose": "400 mg/12h x3 dosis → 400 mg/24h",
+          "increased_dose": "800 mg/12h x3 dosis → 800 mg/24h",
+          "notes": "Dosis alta en infecciones graves, osteoarticulares y endocarditis"
+        }
+      ]
+    },
+    {
+      "class": "Oxazolidinonas",
+      "antibiotics": [
+        {
+          "name": "Linezolid",
+          "routes": ["VO", "IV"],
+          "standard_dose": "600 mg/12h VO o IV",
+          "increased_dose": "—",
+          "notes": "Excelente biodisponibilidad oral (terapia secuencial IV→VO sin pérdida de eficacia). No requiere ajuste renal. Máx. 4 semanas (toxicidad medular)"
+        }
+      ]
+    },
+    {
+      "class": "Lipopéptidos",
+      "antibiotics": [
+        {
+          "name": "Daptomicina",
+          "routes": ["IV"],
+          "standard_dose": "6 mg/kg/24h IV",
+          "increased_dose": "8-10 mg/kg/24h IV",
+          "notes": "Bacteriemia/endocarditis: 10 mg/kg/día. NO usar en neumonía (inactivada por surfactante). Monitorizar CPK"
+        }
+      ]
+    },
+    {
+      "class": "Tetraciclinas",
+      "antibiotics": [
+        {
+          "name": "Doxiciclina",
+          "routes": ["VO", "IV"],
+          "standard_dose": "100 mg/12h VO o IV",
+          "increased_dose": "—",
+          "notes": "ITS, atípicos respiratorios, Rickettsia, Borrelia. No precisa ajuste renal"
+        },
+        {
+          "name": "Tigeciclina",
+          "routes": ["IV"],
+          "standard_dose": "100 mg dosis carga → 50 mg/12h IV",
+          "increased_dose": "—",
+          "notes": "Amplio espectro incluyendo BLEE y SARM. No activo frente a Pseudomonas. Ajuste en insuficiencia hepática grave"
+        }
+      ]
+    },
+    {
+      "class": "Miscelánea",
+      "antibiotics": [
+        {
+          "name": "Metronidazol",
+          "routes": ["VO", "IV"],
+          "standard_dose": "500 mg/8h VO o IV",
+          "increased_dose": "—",
+          "notes": "Anaerobios, C. difficile (oral), Trichomonas, Giardia. No precisa ajuste renal"
+        },
+        {
+          "name": "Clindamicina",
+          "routes": ["VO", "IV", "IM"],
+          "standard_dose": "300 mg/12h VO · 600 mg/8h IV",
+          "increased_dose": "600 mg/8h VO · 900 mg/8h IV",
+          "notes": "Gram positivos, anaerobios. Dosis alta según gravedad"
+        },
+        {
+          "name": "Fosfomicina IV",
+          "routes": ["IV"],
+          "standard_dose": "4 g/6-8h IV",
+          "increased_dose": "—",
+          "notes": "Siempre en combinación (no monoterapia IV). ITU complicadas, infecciones por MRSA en combinación"
+        },
+        {
+          "name": "Fosfomicina-trometamol",
+          "routes": ["VO"],
+          "standard_dose": "3 g dosis única VO",
+          "increased_dose": "—",
+          "notes": "Primera línea en cistitis no complicada y bacteriuria asintomática embarazo. Puede repetirse a las 48-72h"
+        },
+        {
+          "name": "Trimetoprim/Sulfametoxazol (Cotrimoxazol)",
+          "routes": ["VO", "IV"],
+          "standard_dose": "160/800 mg/12h VO o IV",
+          "increased_dose": "160/800 mg/8h VO o IV",
+          "notes": "Pneumocystis jirovecii, Nocardia, SARM sensible, ITU. Ajuste renal si FG <30"
+        },
+        {
+          "name": "Rifampicina",
+          "routes": ["VO", "IV"],
+          "standard_dose": "600 mg/24h VO o IV",
+          "increased_dose": "—",
+          "notes": "Siempre en combinación. Infecciones sobre prótesis (estafilococo), tuberculosis. Múltiples interacciones farmacológicas"
+        },
+        {
+          "name": "Nitrofurantoína",
+          "routes": ["VO"],
+          "standard_dose": "50 mg/6h VO",
+          "increased_dose": "—",
+          "notes": "Solo para cistitis no complicada. Contraindicada si FG <45 ml/min. Evitar en 1er trimestre embarazo y a término"
+        }
+      ]
+    },
+    {
+      "class": "Antifúngicos",
+      "antibiotics": [
+        {
+          "name": "Fluconazol",
+          "routes": ["VO", "IV"],
+          "standard_dose": "400-800 mg/24h VO o IV",
+          "increased_dose": "—",
+          "notes": "Candidiasis invasiva (candidemia) si paciente estable y C. albicans probable. Ajuste renal. NO activo frente a C. krusei ni C. glabrata resistente"
+        },
+        {
+          "name": "Anidulafungina",
+          "routes": ["IV"],
+          "standard_dose": "200 mg dosis carga → 100 mg/24h IV",
+          "increased_dose": "—",
+          "notes": "Primera línea candidemia grave/inestable. No requiere ajuste renal ni hepático leve-moderado"
+        },
+        {
+          "name": "Caspofungina",
+          "routes": ["IV"],
+          "standard_dose": "70 mg dosis carga → 50 mg/24h IV",
+          "increased_dose": "70 mg/24h si peso >80 kg",
+          "notes": "Primera línea candidemia grave/inestable. Ajuste en insuficiencia hepática moderada-grave"
+        },
+        {
+          "name": "Micafungina",
+          "routes": ["IV"],
+          "standard_dose": "100 mg/24h IV",
+          "increased_dose": "—",
+          "notes": "Primera línea candidemia grave/inestable. No requiere ajuste renal"
+        },
+        {
+          "name": "Voriconazol",
+          "routes": ["VO", "IV"],
+          "standard_dose": "6 mg/kg/12h x2 dosis → 4 mg/kg/12h IV",
+          "increased_dose": "—",
+          "notes": "Aspergilosis invasiva. Evitar IV si FG <50 (acumulación ciclodextrina). Múltiples interacciones. Monitorizar niveles"
+        },
+        {
+          "name": "Anfotericina B liposomal",
+          "routes": ["IV"],
+          "standard_dose": "3-5 mg/kg/día IV",
+          "increased_dose": "—",
+          "notes": "Infecciones fúngicas graves resistentes o paciente con contraindicación a azoles/equinocandinas. No precisa ajuste renal"
+        }
+      ]
+    },
+    {
+      "class": "Antivirales",
+      "antibiotics": [
+        {
+          "name": "Aciclovir",
+          "routes": ["IV", "VO"],
+          "standard_dose": "5-10 mg/kg/8h IV · 400-800 mg/5 veces día VO",
+          "increased_dose": "—",
+          "notes": "Encefalitis herpética: 10 mg/kg/8h IV mínimo 14-21 días. Ajuste renal obligatorio"
+        },
+        {
+          "name": "Oseltamivir (Tamiflu)",
+          "routes": ["VO"],
+          "standard_dose": "75 mg/12h VO x 5 días",
+          "increased_dose": "—",
+          "notes": "Gripe. Iniciar en <48h síntomas. En inmunodeprimidos 10 días. Ajuste si FG 10-30 ml/min"
+        },
+        {
+          "name": "Remdesivir",
+          "routes": ["IV"],
+          "standard_dose": "200 mg dosis carga → 100 mg/24h IV x 4 días",
+          "increased_dose": "—",
+          "notes": "COVID-19 moderado-grave con necesidad O2. No usar si FG <30"
+        }
+      ]
+    }
+  ],
+  "sequential_therapy": {
+    "description": "Candidatos a terapia secuencial IV→VO cuando: mejoría clínica, afebril >24h, tolerancia oral, tracto GI funcionante",
+    "antibiotics_with_excellent_oral_bioavailability": [
+      {"name": "Linezolid", "iv": "600 mg/12h", "vo": "600 mg/12h", "note": "Biodisponibilidad ~100%"},
+      {"name": "Metronidazol", "iv": "500 mg/8h", "vo": "500 mg/8h", "note": "Biodisponibilidad ~100%"},
+      {"name": "Doxiciclina", "iv": "100 mg/12h", "vo": "100 mg/12h", "note": "Biodisponibilidad ~93%"},
+      {"name": "Ciprofloxacino", "iv": "400 mg/12h", "vo": "500 mg/12h", "note": "Biodisponibilidad ~70-80%"},
+      {"name": "Levofloxacino", "iv": "500 mg/24h", "vo": "500 mg/24h", "note": "Biodisponibilidad ~99%"},
+      {"name": "Cotrimoxazol", "iv": "800/160 mg/12h", "vo": "800/160 mg/12h", "note": "Biodisponibilidad ~90-100%"},
+      {"name": "Fluconazol", "iv": "400 mg/24h", "vo": "400 mg/24h", "note": "Biodisponibilidad ~90%"},
+      {"name": "Voriconazol", "iv": "4 mg/kg/12h", "vo": "200-300 mg/12h", "note": "Biodisponibilidad ~96% en ayunas"},
+      {"name": "Rifampicina", "iv": "600 mg/24h", "vo": "600 mg/24h", "note": "Biodisponibilidad ~90%"},
+      {"name": "Clindamicina", "iv": "600-900 mg/8h", "vo": "300-450 mg/8h", "note": "Biodisponibilidad ~90%"}
+    ]
+  }
+}
