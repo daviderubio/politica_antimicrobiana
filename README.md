@@ -2,6 +2,11 @@
 
 Aplicación web interactiva para consulta de la **Guía de Tratamiento Antimicrobiano en Adultos (v1.1, 2023)** del Grupo PROA del Hospital Universitario de Valme (Sevilla).
 
+## Autores
+
+- **David E. Rubio** ([@daviderubio](https://github.com/daviderubio))
+- **Joaquin Lanz** ([@Mexandalu](https://github.com/Mexandalu))
+
 ## Funcionalidades
 
 - **Explorador de síndromes**: Navegación por 23 síndromes infecciosos organizados por sistema orgánico
