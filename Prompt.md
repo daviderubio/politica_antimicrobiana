@@ -1,7 +1,7 @@
 Prompt
 
 Instructions:
-- Check the pdf /Users/daviderubio/Desktop/code/projects/politica_antimicrobiana/input/Guía Atb.pdf
+- Check the pdf Guía Atb.pdf
 - Extract the information from the pdf, I need to create an app based on that information, so make a database or whatever data structure is necesarry to access the information
 - For UX Context, on how to design the app, check the context section below
 - I want to run the app in streamlit, I also want to publish it, so take this as reference: Reference for streamlit app https://github.com/daviderubio/wrkmatch
